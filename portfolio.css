@@ -92,9 +92,17 @@ nav ul li {
   color: black;
 }
 
+.mail-tel-btns svg{
+  margin-right: 10px;
+  fill: #757575;
+}
+.mail-tel-btns svg:hover{
+  fill: #2196f3;
+}
+
 #mail {
   position: absolute;
-  width: 135px;
+  width: 161px;
   height: 16px;
   left: 1097px;
   top: 32px;
@@ -109,7 +117,7 @@ nav ul li {
 
 #tel {
   position: absolute;
-  width: 113px;
+  width: 132px;
   height: 16px;
   left: 1272px;
   top: 32px;
@@ -120,8 +128,8 @@ nav ul li {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+  cursor: pointer;
 }
-
 .navbar_btn {
   color: #212121;
   font-family: "Roboto";
@@ -131,18 +139,18 @@ nav ul li {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
+
 .navbar_btn:hover,
 .navbar_btn.active {
   background: none;
   color: #2196f3;
 }
 
-#mail:hover,
+#mail:hover, #tel:hover,
 #mail.active {
   background: none;
   color: #2196f3;
 }
-
 /* Portfolio */
 .portfolio {
   position: absolute;
@@ -198,6 +206,10 @@ button:hover {
   margin: 10px;
   width: 370px;
   height: 404px;
+  cursor: pointer;
+}
+.project:hover{
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .project h5 {
@@ -239,7 +251,11 @@ footer {
   top: 1628px;
 
   background: #2f303a;
-}
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
 footer ul {
   position: absolute;
@@ -282,3 +298,64 @@ address {
 a.logo1 {
   color: #ffffff;
 }
+
+
+#social-media-title{
+color: #ffffff;
+width: 99px;
+height: 16px;
+margin-bottom: 20px;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-align: left;
+text-transform: uppercase;
+
+}
+.social-media-logo {
+  width: 206px;
+  height: 50px;
+
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-media-logo svg {
+  fill: #afb1b8;
+  width: 45px;
+  height: 40px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  padding: 7px;
+
+}
+.social-media-logo svg:hover{
+  fill:white;
+  background-color: #2196f3;
+  /* border: 1px solid #2196f3; */
+  border-radius: 45%;
+}
+footer .social-media-logo{
+  width: 206px;
+height: 44px;
+
+
+}
+footer .social-media-logo svg{
+  background-color: rgb(70, 66, 66);
+  border: 12px;
+  fill: #ffffff;
+  width: 44px;
+height: 44px;
+flex-shrink: 0;
+  border-radius: 45%;
+  margin:10px;
+}
+

@@ -93,9 +93,18 @@ nav ul li {
   letter-spacing: 0.02em;
 }
 
+
+.mail-tel-btns svg{
+  margin-right: 10px;
+  fill: #757575;
+}
+.mail-tel-btns svg:hover{
+  fill: #2196f3;
+}
+
 #mail {
   position: absolute;
-  width: 135px;
+  width: 161px;
   height: 16px;
   left: 1097px;
   top: 32px;
@@ -110,7 +119,7 @@ nav ul li {
 
 #tel {
   position: absolute;
-  width: 113px;
+  width: 132px;
   height: 16px;
   left: 1272px;
   top: 32px;
@@ -121,6 +130,7 @@ nav ul li {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+  cursor: pointer;
 }
 .navbar_btn {
   color: #212121;
@@ -138,7 +148,7 @@ nav ul li {
   color: #2196f3;
 }
 
-#mail:hover,
+#mail:hover, #tel:hover,
 #mail.active {
   background: none;
   color: #2196f3;
@@ -309,7 +319,11 @@ footer {
   top: 2679px;
 
   background: #2f303a;
-}
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
 footer ul {
   position: absolute;
@@ -352,6 +366,40 @@ address {
 a.logo1 {
   color: #ffffff;
 }
+
+
+#social-media-title{
+color: #ffffff;
+width: 99px;
+height: 16px;
+margin-bottom: 20px;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-align: left;
+text-transform: uppercase;
+
+}
+footer .social-media-logo{
+  width: 206px;
+height: 44px;
+
+
+}
+footer .social-media-logo svg{
+  background-color: rgb(70, 66, 66);
+  border: 12px;
+  fill: #ffffff;
+  width: 44px;
+height: 44px;
+flex-shrink: 0;
+  border-radius: 45%;
+  margin:10px;
+}
+
+
 
 /* OUR TEAM */
 
@@ -420,23 +468,35 @@ h5 {
 section img {
   padding-bottom: 20px;
 }
-.social-media-logo{
+.social-media-logo {
   width: 206px;
-  height: 44px;
-  
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    margin-left: auto;
-    margin-right: auto;
+  height: 50px;
+
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
 }
-.social-media-logo svg{
- 
+.social-media-logo svg {
+  fill: #afb1b8;
+  width: 45px;
+  height: 40px;
   display: inline-flex;
   flex-direction: row;
   justify-content: space-around;
+  background-color: white;
+  padding: 7px;
+
 }
+.social-media-logo svg:hover{
+  fill:white;
+  background-color: #2196f3;
+  /* border: 1px solid #2196f3; */
+  border-radius: 45%;
+}
+
 
 /* REGULAR CUSTOMERS */
 .regular-customer {
@@ -463,28 +523,26 @@ section img {
   justify-content: space-evenly;
 }
 
-.regular-customers-svg{
-  border: 1px solid #AFB1B8;
+.regular-customers-svg {
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   margin: 15px;
   width: 170px;
   height: 92px;
   flex-shrink: 0;
   /* cursor: pointer; */
-  fill: #AFB1B8;
-  
+  fill: #afb1b8;
 }
-.regular-customer-image{
+.regular-customer-image {
   margin: 16px 32px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
-.regular-customers-svg:hover{
-  border-color: #2196F3;
+.regular-customers-svg:hover {
+  border-color: #2196f3;
 }
-.regular-customer-image:hover{
- fill: #2196F3;
- 
+.regular-customer-image:hover {
+  fill: #2196f3;
 }
 .regular-customer .regular-grid {
   display: flex;
