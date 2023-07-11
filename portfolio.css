@@ -95,6 +95,7 @@ nav ul li {
 .mail-tel-btns svg{
   margin-right: 10px;
   fill: #757575;
+  vertical-align: middle;
 }
 .mail-tel-btns svg:hover{
   fill: #2196f3;
