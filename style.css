@@ -151,7 +151,7 @@ nav ul li {
 }
 
 #mail:hover, #tel:hover,
-#mail.active {
+#mail.active, #tel.active{
   background: none;
   color: #2196f3;
 }
@@ -369,6 +369,11 @@ a.logo1 {
   color: #ffffff;
 }
 
+footer .find-us-on{
+  width: 206px;
+height: 80px;
+margin-left: -300px;
+}
 
 #social-media-title{
 color: #ffffff;
@@ -380,26 +385,24 @@ font-size: 14px;
 font-weight: 700;
 line-height: 16px;
 letter-spacing: 0.03em;
-text-align: left;
+text-align: center;
 text-transform: uppercase;
 
 }
-footer .social-media-logo{
-  width: 206px;
-height: 44px;
-
-
-}
-footer .social-media-logo svg{
-  background-color: rgb(70, 66, 66);
-  border: 12px;
-  fill: #ffffff;
+ footer .social-media-logo{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+} 
+footer .social-media-logo .icon{
   width: 44px;
-height: 44px;
-flex-shrink: 0;
-  border-radius: 45%;
-  margin:10px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgb(70, 66, 66);
+  color: #ffffff;
+  gap: 10px;
 }
+
 
 
 
@@ -473,31 +476,37 @@ section img {
 .social-media-logo {
   width: 206px;
   height: 50px;
-
+  margin-top: 15px;
   display: flex;
   align-content: center;
   justify-content: space-evenly;
   align-items: flex-end;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; 
+}
+.social-media-logo .icon{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #AFB1B8;
 }
 .social-media-logo svg {
-  fill: #afb1b8;
-  width: 45px;
-  height: 40px;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: white;
-  padding: 7px;
+  fill: white;
+  width: 20px;
+  height: 20px;
+  gap: 10px;
+  
 
 }
-.social-media-logo svg:hover{
-  fill:white;
+
+.social-media-logo .icon:hover,
+.social-media-logo .icon:focus{
+  color:white;
   background-color: #2196f3;
-  /* border: 1px solid #2196f3; */
-  border-radius: 45%;
-}
+  border-radius: 50%;
+} 
 
 
 /* REGULAR CUSTOMERS */
