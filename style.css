@@ -558,3 +558,54 @@ section img {
 .regular-customer .regular-grid {
   display: flex;
 }
+
+
+/* MODAL */
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content{
+  padding: 16px;
+  background-color: #ffffff;
+  width: 528px;
+  margin: 0 auto;
+  height: 581px;
+  position: relative;
+}
+
+.is-hidden{
+  visibility: hidden;
+}
+
+.close-btn{
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  color: black;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn svg{
+}
+
+.close-btn:focus,
+.close-btn:hover{
+  background-color: red;
+}
