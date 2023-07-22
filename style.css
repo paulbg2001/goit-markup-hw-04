@@ -147,7 +147,7 @@ nav ul li {
 }
 
 .navbar_btn:hover,
-.navbar_btn.active {
+.navbar_btn.active::after {
   background: none;
   color: #2196f3;
 }
@@ -159,6 +159,24 @@ nav ul li {
   background: none;
   color: #2196f3;
 }
+
+.effect{
+  position: relative;
+  color: #2196f3;
+}
+
+.effect::after{
+  content: '';
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -28px;
+  background: #2196f3;
+  left: 0;
+  color: #2196f3;
+}
+
+
 
 /* HEAD */
 
